@@ -1,24 +1,27 @@
-var name:string;
-number:integer;
+var
+    name:string;
+    number:integer;
+
 begin
-read(name);
-case name of
-'марина':write('хуина');
-'саша':write('хуяша');
-'петя':write('хуетя');
-'даша':write('хуяша');
-end;
-read(number);
-case number of
-0:write('ноль');
-1:write('один');
-2:write('два');
-3:write('три');
-4:write('четыре');
-5:write('пять');
-6:write('шесть');
-7:write('семь');
-8:write('восемь');
-9:write('девять');
-end;
+    read(name);
+    case name of
+        'РјР°СЂРёРЅР°':write('С…СѓРёРЅР°');
+        'СЃР°С€Р°':write('С…СѓСЏС€Р°');
+        'РїРµС‚СЏ':write('С…СѓРµС‚СЏ');
+        'РґР°С€Р°':write('С…СѓСЏС€Р°');
+    end;
+
+    read(number);
+    case number of
+        0:write('РЅРѕР»СЊ');
+        1:write('РѕРґРёРЅ');
+        2:write('РґРІР°');
+        3:write('С‚СЂРё');
+        4:write('С‡РµС‚С‹СЂРµ');
+        5:write('РїСЏС‚СЊ');
+        6:write('С€РµСЃС‚СЊ');
+        7:write('СЃРµРјСЊ');
+        8:write('РІРѕСЃРµРјСЊ');
+        9:write('РґРµРІСЏС‚СЊ');
+    end;
 end.

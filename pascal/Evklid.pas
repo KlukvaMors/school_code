@@ -1,15 +1,16 @@
 Program Evklid;
-var m, n: longint;
+var 
+    m, n: longint;
 BEGIN
-Writeln('Введите M и N');
-read(m,n);
-while m<>n do
-begin
-if m>n then
-m:=m-n
-else
-n:=n-m;
-end;
-writeln('Наибольший общий делитель m и n');
-writeln(m);
+    Writeln('Р’РІРµРґРёС‚Рµ M Рё N');
+    read(m,n);
+    while m<>n do
+    begin
+        if m>n then
+            m:=m-n
+        else
+            n:=n-m;
+    end;
+    writeln('РќР°РёР±РѕР»СЊС€РёР№ РѕР±С‰РёР№ РґРµР»РёС‚РµР»СЊ m Рё n');
+    writeln(m);
 END.
