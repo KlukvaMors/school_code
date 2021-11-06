@@ -1,0 +1,12 @@
+
+
+<html>
+    <head>
+        <title>Фреймы в html</title>
+    </head>
+    <frameset cols="15%, 76%,9%" FRAMEBORDER="NO" BORDER="0">
+        <frame src="fr1.html">
+        <frame src="fr2.html" NAME="главная">
+        <frame src="fr3.html">
+    </frameset>
+</html>

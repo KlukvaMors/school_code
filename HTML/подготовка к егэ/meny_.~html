@@ -1,0 +1,16 @@
+<html>
+<title>меню</title>
+<body alink="#d8d800" vlink="#1a77f0">
+<center></html><font color="#2a2aff" size="6"><a href="fr1.html">Предметы</a></font></center>
+<center><font color="" size="4"><a href="математика.html" target="главная">Математика</a></font></center>
+<center><font color="" size="4"><a href="русский.html" target="главная">Русский язык</a></font></center>
+<center><font color="" size="4"><a href="литература.html" target="главная">Литература</a></font></center>
+<center><font color="" size="4"><a href="информатика.html" target="главная">Информатика</a></font></center>
+<center><font color="" size="4"><a href="химия.html" target="главная">Химия</a></font></center>
+<center><font color="" size="4"><a href="физика.html" target="главная">Физика</a></font></center>
+<center><font color="" size="4"><a href="биология.html"  target="главная">Биология</a></font></center>
+<center><font color="" size="4"><a href="география.html"  target="главная">География</a></font></center>
+<center><font color="" size="4"><a href="обществоведение.html"  target="главная">Обществоведение</a></font></center>
+<center><font color="" size="4"><a href="история.html"  target="главная">История</a></font></center>
+
+</body>
