@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Позиционирование</title>
+	<style type="text/css">
+	div {
+		margin: 10px 0px 10px;
+		font-size: 1.5em;
+	}
+	i {
+		border: 1px dashed #535353;
+		background-color: #D6D6D6;
+		border-radius: 10px;
+		display: block;
+		width: 600px;
+		margin: 10px 0px 10px;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	.block1 {
+		border:2px solid #FD2121;
+		background-color: #F6BCBC;
+	}
+	.block2 {
+		width: 200px;
+		height: 100px;
+		border:2px solid #0E16B0;
+		background-color: #BCC1F0;
+	}
+	.block3 {
+		display: inline-block;
+		width: 200px;
+		border:2px solid #078012;
+		background-color: #C3EFA0;
+	}
+
+	</style>
+</head>
+<body>
+	<i>по умолчание блочные элементы занимают всю ширину страницы,
+	их высота зависит от содержимого,
+	они всегда идут друг под другом
+	</i>
+	<div class="block1">блочный элемент 1</div>
+	<div class="block1">блочный элемент 2</div>
+	<div class="block1">блочный элемент 3</div>
+
+	<i>однако высоту и ширину, в отличии от строчных элементов, можно легко задать через CSS</i>
+	<div class="block2">блочный элемент 1</div>
+	<div class="block2">блочный элемент 2</div>
+	<div class="block2">блочный элемент 3</div>
+
+	<i>ёще мы можем сделать чтобы блочные элементы шли друг за другом (как строчные элементы), и при этом они сохранят свои свойства</i>
+	<div class="block3" style="height: 50px;">блочный элемент 1</div>
+	<div class="block3" style="height: 100px;">блочный элемент 2</div>
+	<div class="block3" style="height: 150px;">блочный элемент 3</div>
+
+</body>
+</html>

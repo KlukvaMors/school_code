@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS animation</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body {
+		height: 100%;
+		margin: 0;
+		position: relative;
+		background-color: #efefef;
+	}
+	i {
+		border: 1px dashed #535353;
+		background-color: #D6D6D6;
+		border-radius: 10px;
+		display: block;
+		width: 600px;
+		margin: 10px 0px 10px;
+		text-align: center;
+		font-size: 1.2em;
+	}
+	div {
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+		border: 1px solid black;
+		background-color: #ddd;
+		position: relative;
+	}
+
+	.changeColor:hover {
+		background-color: red;
+
+		/*standart animation code*/
+    	animation-name: changeColor;
+    	animation-duration: 8s;
+
+		/* Chrome, Safari, Opera */
+    	-webkit-animation-name: changeColor;
+    	-webkit-animation-duration: 8s;
+*/	}
+
+	.changeWidth:hover {
+		background: green;
+		animation-name: changeWidth;
+		animation-duration: 8s;
+	}
+	.complexAnimation:hover {
+		animation-name: complexAnimation;
+		animation-duration: 16s;
+
+	}
+	.rotation:hover {
+		border-top: 4px solid black;
+
+		animation-name: rotation;
+		animation-duration: 15s;
+		animation-delay: 0s;/*задержка перед запуском анимации*/
+		animation-iteration-count: infinite;/*количество повторений анимации*/
+	}
+	.rotation1:hover {
+		border-top: 4px solid black;
+
+		animation-name: rotation;
+		animation-duration: 15s;
+		animation-timing-function: linear;
+		animation-delay: 0s;/*задержка перед запуском анимации*/
+		animation-iteration-count: infinite;/*количество повторений анимации*/
+	}
+
+	/*animation*/
+
+	@keyframes changeColor {
+		from {
+			background-color: red
+		}
+		to {
+			background-color: yellow
+		}
+	}
+
+	@-webkit-keyframes changeColor {
+			from {
+				background-color: red
+			}
+			to {
+				background-color: yellow
+			}
+	}
+
+	@keyframes changeWidth{
+		0% {width: 100px}
+		50% {width: 200px}
+		100% {width: 100px}
+	}
+
+
+	@keyframes complexAnimation {
+		0% {
+			background-color: yellow;
+			left: 0px;
+			top: 0px;
+		}
+		25% {
+			background-color: red;
+			left: 200px;
+			top: 0px;
+		}
+		50% {
+			background-color: green;
+			left: 200px;
+			top: 200px;
+		}
+		75% {
+			background-color: blue;
+			left: 0px;
+			top: 200px;
+		}
+		100% {
+			background-color: yellow;
+			left: 0px;
+			top: 0px;
+		}
+
+	}
+
+	@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(3600deg);}
+	}
+
+
+
+
+	</style>
+</head>
+<body>
+	<i>Данная анимация идёт 10с и плавно меняет цвет с красного на жёлтый.
+	В конце анимация цвет возращается в исходное положение.</i>
+	<div class="changeColor">	</div>
+
+	<i>
+		Эта анимация меняет плавно меняет ширину блока до 200 пик.
+		и плавно возращает ширину обратно
+	</i>
+	<div class="changeWidth">	</div>
+
+	<i>
+		Эта анимация будет бесконечно (пока вы не уберёте курсор с элементы)
+		делать 10 оборотов вокруг своей оси
+	</i>
+	<div class="rotation"></div>
+
+	<i>те же параметры, что и у предыдущей анимации, но крутит без остановки</i>
+	<div class="rotation1"></div>
+
+	<i>
+		А вот эта комплексная анимация, которая одновременно меняет
+		положение блока и его цвет.
+	</i>
+		<div class="complexAnimation"></div>
+
+
+	
+</body>
+</html>
